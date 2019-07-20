@@ -1,0 +1,10 @@
+build:
+  languages:
+    - python
+  packages:
+    - libopencv-dev
+    - libsm6
+    - libgtk2.0-dev
+    - pkg-config
+run:
+  web: gunicorn web:app --log-file=-
